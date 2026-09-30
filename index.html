@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juanda Rifki Simanjuntak | Future Educator & Creative Professional</title>
+    <meta name="description" content="Portofolio Juanda Rifki Simanjuntak, mahasiswa Pendidikan Matematika UNIMED dan chef yang menggabungkan logika analitis dengan kreativitas." />
+    <meta name="theme-color" content="#4A2C1D" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234A2C1D'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='%23C9A24B' font-family='serif'>J</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --espresso: #2b1d16;
+        --choc: #4a2c1d;
+        --mocha: #8b5e3c;
+        --cream: #fbf6ee;
+        --beige: #eadbc8;
+        --terra: #a4502c;
+        --gold: #c9a24b;
+        --ink: #33251d;
+        --muted: #6f5a4c;
+        --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+        --sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 76px;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--cream);
+        color: var(--ink);
+        line-height: 1.7;
+        font-size: 17px;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+      }
+      :focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+        border-radius: 6px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        line-height: 1.15;
+        color: var(--choc);
+      }
+      h2 {
+        font-size: clamp(1.9rem, 4vw, 2.7rem);
+        margin-bottom: 0.6rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.4rem;
+      }
+      .wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      section {
+        padding: 6rem 0;
+      }
+      .lead {
+        color: var(--muted);
+        max-width: 60ch;
+        margin-bottom: 2.5rem;
+      }
+
+      /* Navbar */
+      nav {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 50;
+        background: rgba(251, 246, 238, 0.72);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(139, 94, 60, 0.18);
+        transition: box-shadow 0.3s;
+      }
+      nav.scrolled {
+        box-shadow: 0 6px 24px rgba(43, 29, 22, 0.08);
+      }
+      .nav-in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+      }
+      .logo {
+        font-family: var(--serif);
+        font-weight: 700;
+        font-size: 1.15rem;
+        text-decoration: none;
+        color: var(--choc);
+      }
+      .menu {
+        display: flex;
+        gap: 0.25rem;
+        list-style: none;
+      }
+      .menu a {
+        display: block;
+        padding: 0.45rem 0.85rem;
+        border-radius: 99px;
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--muted);
+        transition:
+          background 0.25s,
+          color 0.25s;
+      }
+      .menu a:hover {
+        background: var(--beige);
+        color: var(--choc);
+      }
+      .menu a.active {
+        background: var(--choc);
+        color: var(--cream);
+      }
+      .burger {
+        display: none;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        padding: 0.5rem;
+        color: var(--choc);
+      }
+      .burger span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: currentColor;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+      .burger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .burger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .burger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      /* Hero */
+      #home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 8rem 0 4rem;
+        background: radial-gradient(900px 500px at 85% 20%, rgba(201, 162, 75, 0.22), transparent 60%), linear-gradient(180deg, var(--cream), var(--beige));
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .hi {
+        color: var(--terra);
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+      h1 {
+        font-size: clamp(2.6rem, 7vw, 4.6rem);
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+      }
+      .title {
+        font-family: var(--serif);
+        font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+        color: var(--mocha);
+        margin-bottom: 1.25rem;
+      }
+      .hero p.sub {
+        color: var(--muted);
+        max-width: 52ch;
+        margin-bottom: 2rem;
+      }
+      .btns {
+        display: flex;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 1.7rem;
+        border-radius: 99px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 600;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s,
+          background 0.25s,
+          color 0.25s;
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(74, 44, 29, 0.2);
+      }
+      .btn.primary {
+        background: var(--terra);
+        color: var(--cream);
+      }
+      .btn.primary:hover {
+        background: #8c4123;
+      }
+      .btn.ghost {
+        border-color: var(--choc);
+        color: var(--choc);
+        background: transparent;
+      }
+      .btn.ghost:hover {
+        background: var(--choc);
+        color: var(--cream);
+      }
+
+      /* Photo frame: ganti src pada <img id="foto"> dengan fotomu */
+      .frame {
+        position: relative;
+        width: min(340px, 80vw);
+        margin: 0 auto;
+      }
+      .frame .arch {
+        aspect-ratio: 3/4;
+        border-radius: 999px 999px 28px 28px;
+        overflow: hidden;
+        background: linear-gradient(160deg, var(--mocha), var(--choc));
+        box-shadow: 0 30px 60px -15px rgba(43, 29, 22, 0.5);
+        border: 8px solid var(--cream);
+        outline: 2px solid var(--gold);
+        display: grid;
+        place-items: center;
+        color: var(--beige);
+        text-align: center;
+        font-size: 0.95rem;
+      }
+      .frame .arch img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .chip {
+        position: absolute;
+        background: var(--cream);
+        border: 1px solid var(--beige);
+        border-radius: 16px;
+        padding: 0.5rem 0.9rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        box-shadow: 0 10px 24px rgba(43, 29, 22, 0.18);
+        color: var(--choc);
+        animation: bob 5s ease-in-out infinite;
+      }
+      .chip.a {
+        left: -14%;
+        top: 16%;
+      }
+      .chip.b {
+        right: -10%;
+        bottom: 14%;
+        animation-delay: -2.5s;
+      }
+      @keyframes bob {
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      /* Cards & layout */
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+      .g2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .g3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .card {
+        background: #fff;
+        border: 1px solid var(--beige);
+        border-radius: 20px;
+        padding: 1.8rem;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s,
+          border-color 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 36px -12px rgba(74, 44, 29, 0.25);
+        border-color: var(--gold);
+      }
+      .card p {
+        color: var(--muted);
+      }
+      .alt {
+        background: var(--beige);
+      }
+      .dark {
+        background: var(--choc);
+        color: var(--beige);
+      }
+      .dark h2,
+      .dark h3 {
+        color: var(--cream);
+      }
+      .dark .lead {
+        color: #d9c4ac;
+      }
+
+      /* About */
+      .about {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+      .about blockquote {
+        font-family: var(--serif);
+        font-size: 1.3rem;
+        line-height: 1.55;
+        color: var(--choc);
+        padding-left: 1.4rem;
+        border-left: 4px solid var(--gold);
+        margin-bottom: 1.5rem;
+      }
+      .facts {
+        list-style: none;
+        display: grid;
+        gap: 0.9rem;
+      }
+      .facts li {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.9rem;
+        border-bottom: 1px solid rgba(139, 94, 60, 0.25);
+      }
+      .facts b {
+        font-size: 0.85rem;
+        color: var(--terra);
+        font-weight: 600;
+      }
+
+      /* Timeline (urutan nyata: perjalanan kuliah) */
+      .tl {
+        position: relative;
+        padding-left: 2rem;
+        display: grid;
+        gap: 1.5rem;
+      }
+      .tl:before {
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 8px;
+        bottom: 8px;
+        width: 2px;
+        background: var(--gold);
+      }
+      .tl .it {
+        position: relative;
+      }
+      .tl .it:before {
+        content: '';
+        position: absolute;
+        left: -2rem;
+        top: 0.45rem;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--choc);
+        border: 3px solid var(--gold);
+      }
+      .tl .it.now:before {
+        background: var(--terra);
+      }
+      .tl small {
+        color: var(--gold);
+        font-weight: 600;
+      }
+
+      /* Experience & hobbies */
+      .role {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .tags span {
+        background: var(--beige);
+        color: var(--choc);
+        border-radius: 99px;
+        padding: 0.25rem 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      .hob {
+        text-align: center;
+      }
+      .hob .ic {
+        font-size: 2.6rem;
+        display: grid;
+        place-items: center;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        background: var(--beige);
+        transition: transform 0.4s;
+      }
+      .hob:hover .ic {
+        transform: rotate(-8deg) scale(1.1);
+      }
+
+      /* Projects */
+      .proj .thumb {
+        aspect-ratio: 16/10;
+        border-radius: 14px;
+        margin-bottom: 1rem;
+        display: grid;
+        place-items: center;
+        font-family: var(--serif);
+        font-size: 2.4rem;
+        color: var(--cream);
+        background: linear-gradient(135deg, var(--mocha), var(--choc));
+        overflow: hidden;
+      }
+      .proj .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .proj:nth-child(2) .thumb {
+        background: linear-gradient(135deg, var(--terra), var(--choc));
+      }
+      .proj:nth-child(3) .thumb {
+        background: linear-gradient(135deg, var(--gold), var(--mocha));
+      }
+
+      /* Contact */
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 2.5rem;
+      }
+      .clist {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+      }
+      .clist a,
+      .clist div {
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(234, 219, 200, 0.25);
+        border-radius: 16px;
+        padding: 1rem 1.3rem;
+        text-decoration: none;
+        transition:
+          background 0.25s,
+          transform 0.25s;
+      }
+      .clist a:hover {
+        background: rgba(255, 255, 255, 0.16);
+        transform: translateX(6px);
+      }
+      .clist small {
+        color: var(--gold);
+        font-weight: 600;
+      }
+      form {
+        background: var(--cream);
+        color: var(--ink);
+        border-radius: 22px;
+        padding: 1.8rem;
+        display: grid;
+        gap: 1rem;
+      }
+      label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--choc);
+        display: grid;
+        gap: 0.35rem;
+      }
+      input,
+      textarea {
+        font: inherit;
+        padding: 0.8rem 1rem;
+        border: 1.5px solid var(--beige);
+        border-radius: 12px;
+        background: #fff;
+        color: var(--ink);
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      input:focus,
+      textarea:focus {
+        outline: 0;
+        border-color: var(--terra);
+        box-shadow: 0 0 0 4px rgba(164, 80, 44, 0.15);
+      }
+      textarea {
+        min-height: 130px;
+        resize: vertical;
+      }
+      .fbtns {
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+      }
+      #status {
+        font-size: 0.9rem;
+        color: var(--terra);
+        min-height: 1.3em;
+      }
+
+      footer {
+        background: var(--espresso);
+        color: #cdb8a0;
+        text-align: center;
+        padding: 1.8rem 1rem;
+        font-size: 0.9rem;
+      }
+      #top {
+        position: fixed;
+        right: 1.2rem;
+        bottom: 1.2rem;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 0;
+        background: var(--choc);
+        color: var(--gold);
+        font-size: 1.3rem;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(43, 29, 22, 0.35);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
+        transition: 0.3s;
+        z-index: 40;
+      }
+      #top.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+      }
+      #top:hover {
+        background: var(--terra);
+        color: #fff;
+      }
+
+      /* Reveal saat scroll */
+      .rv {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .rv.in {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 860px) {
+        section {
+          padding: 4.5rem 0;
+        }
+        .burger {
+          display: block;
+        }
+        .menu {
+          position: absolute;
+          top: 68px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          background: rgba(251, 246, 238, 0.97);
+          padding: 0.8rem 1.5rem 1.2rem;
+          border-bottom: 1px solid var(--beige);
+          display: none;
+        }
+        .menu.open {
+          display: flex;
+        }
+        .hero,
+        .about,
+        .contact,
+        .g2,
+        .g3 {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          text-align: center;
+        }
+        .hero p.sub {
+          margin-inline: auto;
+        }
+        .btns {
+          justify-content: center;
+        }
+        .frame {
+          order: -1;
+          margin-bottom: 1rem;
+          width: min(260px, 70vw);
+        }
+        .chip.a {
+          left: -8%;
+        }
+        .chip.b {
+          right: -6%;
+        }
+        #home {
+          padding-top: 6.5rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .rv {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .chip {
+          animation: none;
+        }
+        * {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="wrap nav-in">
+        <a href="#home" class="logo">Juanda Rifki</a>
+        <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#journey">Pendidikan</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#hobbies">Hobi</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <div class="wrap hero">
+          <div>
+            <p class="hi">Halo, saya</p>
+            <h1>Juanda Rifki Simanjuntak</h1>
+            <p class="title">Future Educator &amp; Creative Professional</p>
+            <p class="sub">Belajar adalah perjalanan yang tidak pernah benar-benar selesai. Setiap pertemuan, setiap kegagalan, dan setiap pertanyaan kecil membawa saya sedikit lebih dekat pada versi diri yang ingin saya jadi.Dengan ketelitian sebagai pegangan dan kreativitas sebagai teman, saya ingin menghadirkan ruang belajar yang hangat, tempat setiap orang merasa cukup untuk bertumbuh.</p>
+            <div class="btns">
+              <a href="#projects" class="btn primary">Explore Portfolio</a>
+              <a href="#contact" class="btn ghost">Contact Me</a>
+            </div>
+          </div>
+          <div class="frame">
+            <div class="arch">
+              <!-- GANTI FOTO: taruh file di folder yang sama, lalu ubah src="foto.jpg" -->
+              <img id="foto" src="img/juan.jpg" alt="Foto Juanda Rifki Simanjuntak" onerror="this.remove()" />
+              <span style="position: absolute; padding: 2rem"></b></span>
+            </div>
+            <div class="chip a">∑ √ ∫ </div>
+            <div class="chip b">👨‍🍳</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="wrap about">
+          <div class="rv">
+            <h2>Tentang saya</h2>
+            <blockquote>Perpaduan unik antara logika analitis seorang matematikawan dan kreativitas artistik seorang  profesional.</blockquote>
+            <p>Bagi saya, pendidikan adalah tentang menemani orang lain bertumbuh. Saya mengabdikan diri pada dunia belajar dan terus mencari cara baru agar ilmu terasa lebih dekat, lebih hidup, dan lebih mudah dipahami. Ketepatan dan ketelitian menjadi pegangan saya dalam menemukan jalan keluar dari setiap persoalan.</p>
+            <p style="margin-top: 1rem">
+              Perjalanan saya melintasi ruang yang berbeda, dari dapur profesional yang menuntut kecepatan dan kepekaan, hingga ruang belajar tempat saya mendampingi siswa selangkah demi selangkah. Dari semuanya, saya membawa energi, disiplin, dan kreativitas ke dalam setiap hal yang saya kerjakan.
+            </p>
+          </div>
+          <ul class="facts card rv">
+            <li><b>Nama lengkap</b>Juanda Rifki Simanjuntak</li>
+            <li><b>Lahir</b><span>7 April 2005 (<span id="age">21</span> tahun)</span></li>
+            <li><b>Keluarga</b>Anak ke-2 dari 3 bersaudara</li>
+            <li><b>Asal</b>Suka Maju, Kec. Tj. Tiram, Kab. Batu Bara, Sumatera Utara 21253</li>
+            <li style="border: 0; padding: 0"><b>Kuliah</b>Semester 7, Pendidikan Matematika, UNIMED</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- JOURNEY -->
+<section id="journey" class="alt">
+  <div class="wrap grid g2" style="align-items:start;gap:3rem">
+
+    <!-- Kiri: riwayat pendidikan -->
+    <div class="rv">
+      <h2>Pendidikan &amp; perjalanan</h2>
+      <p class="lead">Dari bangku SMP di Tanjung Tiram sampai ruang kuliah di Medan, setiap jenjang membentuk cara saya belajar dan mengajar.</p>
+
+      <div class="tl">
+        <div class="it">
+          <small>2017 - 2020</small>
+          <h3>SMP Negeri 1 Tanjung Tiram</h3>
+          <p>Tempat saya pertama kali jatuh cinta pada angka dan belajar bahwa rasa penasaran adalah modal terbaik.</p>
+          <p class="cap">"Dari rasa ingin tahu, semuanya dimulai."</p>
+        </div>
+
+        <div class="it">
+          <small>2020 - 2023</small>
+          <h3>SMA Negeri 1 Tanjung Tiram</h3>
+          <p>Masa mengasah logika, disiplin, dan keberanian untuk menentukan arah masa depan.</p>
+          <p class="cap">"Belajar berpikir, bukan hanya menghafal."</p>
+        </div>
+
+        <div class="it now">
+          <small>2023 - Sekarang</small>
+          <h3>Universitas Negeri Medan (UNIMED)</h3>
+          <p>Pendidikan Matematika, Fakultas MIPA. Sekarang di semester 7 dan bersiap menjadi pendidik yang membuat matematika terasa dekat.</p>
+          <p class="cap">"Menjadi guru yang saya butuhkan dulu."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kanan: filosofi + perjalanan di luar kelas -->
+    <div class="rv side">
+
+      <div class="card">
+        <h3>Filosofi belajar</h3>
+        <p class="quote">Matematika bukan soal menghafal rumus, tapi memahami alasan di baliknya.</p>.</p>
+        </dl>
+      </div>
+
+      <div class="card">
+        <h3>Perjalanan di luar kelas</h3>
+        <p class="note">Pengalaman yang melengkapi pendidikan formal saya.</p>
+
+        <ul class="path">
+          <li>
+            <div class="p-head"><b>Pengajar les</b></div>
+            <p>Mengembangkan metode pengajaran yang interaktif dan mudah dipahami, dengan menyederhanakan materi rumit sesuai kebutuhan tiap siswa.</p>
+          </li>
+          <li class="soft">
+            <div class="p-head"><b>Chef di Dapur</b></div>
+            <p>Melatih ketelitian, manajemen waktu, dan ketenangan di bawah tekanan. Disiplin yang sama saya bawa ke ruang belajar.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="wrap">
+          <div class="rv">
+            <h2>Pengalaman kerja</h2>
+            <p class="lead">Dua dunia yang berbeda, satu standar: rapi, tepat, dan sepenuh hati.</p>
+          </div>
+          <div class="grid g2">
+            <article class="card rv">
+              <div class="role">📐</div>
+              <h3>Pengajar les</h3>
+              <p>Mengembangkan metode pengajaran yang interaktif dan mudah dipahami, menyesuaikan cara menjelaskan dengan gaya belajar tiap siswa.</p>
+              <div class="tags"><span>Metode interaktif</span><span>Komunikasi</span><span>Kesabaran</span></div>
+            </article>
+            <article class="card rv">
+              <div class="role">🍳</div>
+              <h3>Chef di Cafe</h3>
+              <p>Menggabungkan seni estetika penyajian, manajemen waktu, dan ketelitian di bawah tekanan dapur yang sibuk.</p>
+              <div class="tags"><span>Estetika</span><span>Manajemen waktu</span><span>Tahan tekanan</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+      <section id="hobbies" class="alt">
+        <div class="wrap">
+          <div class="rv">
+            <h2>Hobi</h2>
+            <p class="lead">Cara saya mengisi ulang energi.</p>
+          </div>
+          <div class="grid g3">
+            <div class="card hob rv">
+              <div class="ic">📚</div>
+              <h3>Membaca</h3>
+              <p>Sumber ide baru untuk mengajar dan menjalani hidup.</p>
+            </div>
+            <div class="card hob rv">
+              <div class="ic">🍲</div>
+              <h3>Memasak</h3>
+              <p>Tempat kreativitas dan ketelitian bertemu di atas piring.</p>
+            </div>
+            <div class="card hob rv">
+              <div class="ic">🎮</div>
+              <h3>Bermain game</h3>
+              <p>Melatih strategi, fokus, dan cara berpikir cepat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="wrap">
+          <div class="rv">
+            <h2>Portofolio &amp; proyek</h2>
+            <p class="lead">Perkuliahan,Pengalaman,Hobi</p>
+          </div>
+          <div class="grid g3">
+            <article class="card proj rv">
+              <div class="thumb"><img src="img/perkuliahan.jpg" alt=""></div>
+              <h3>Perkuliahan</h3>
+              <p>Diperkuliahan mempertemukan saya dengan teman teman yang hebat.</p>
+              <div class="tags"><span>Belajar</span></div>
+            </article>
+            <article class="card proj rv">
+              <div class="thumb"><img src="img/dapur.jpg" alt=""></div>
+              <h3>Pengalaman</h3>
+              <p>Memiliki skill memasak membuat saya terjun kedunia fnb.</p>
+              <div class="tags"><span>Chef</span></div>
+            </article>
+            <article class="card proj rv">
+              <div class="thumb"><img src="img/hobie.jpg" alt=""></div>
+              <h3>Hobi</h3>
+              <p>Bermain Mobile legend menjadi salah satu tempat pelarian saya dikala penatnya perkuliahan</p>
+              <div class="tags"><span>Immortal bos ku</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="dark">
+        <div class="wrap">
+          <div class="rv">
+            <h2>Hubungi saya</h2>
+            <p class="lead">Punya pertanyaan, ide kolaborasi, atau ingin ngobrol soal pendidikan? Kirim pesan lewat form atau kontak langsung.</p>
+          </div>
+          <div class="contact">
+            <div class="clist rv">
+              <a href="https://wa.me/6283847995709" target="_blank" rel="noopener"><small>WhatsApp</small>0838 4799 5709</a>
+              <a href="mailto:juandarifki01@gmail.com"><small>Email</small>juandarifki01@gmail.com</a>
+              <a href="https://instagram.com/juandarfki" target="_blank" rel="noopener"><small>Instagram</small>@juandarfki</a>
+              <div><small>Lokasi</small>Suka Maju, Kec. Tj. Tiram, Kab. Batu Bara, Sumatera Utara</div>
+            </div>
+            <form id="form" class="rv" novalidate>
+              <label>Nama<input id="fn" required autocomplete="name" placeholder="Nama kamu" /></label>
+              <label>Email<input id="fe" type="email" required autocomplete="email" placeholder="nama@email.com" /></label>
+              <label>Pesan<textarea id="fm" required placeholder="Tulis pesanmu di sini"></textarea></label>
+              <div class="fbtns">
+                <button type="button" class="btn primary" data-via="wa">Kirim via WhatsApp</button>
+                <button type="button" class="btn ghost" data-via="mail">Kirim via Email</button>
+              </div>
+              <p id="status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="yr"></span> Juanda Rifki Simanjuntak. Dibuat dengan secangkir kopi dan sedikit rumus.</footer>
+    <button id="top" aria-label="Kembali ke atas">↑</button>
+
+    <script>
+      // Umur otomatis dari tanggal lahir
+      (function () {
+        var b = new Date(2005, 3, 7),
+          n = new Date(),
+          a = n.getFullYear() - b.getFullYear();
+        if (n < new Date(n.getFullYear(), 3, 7)) a--;
+        document.getElementById('age').textContent = a;
+        document.getElementById('yr').textContent = n.getFullYear();
+      })();
+
+      // Navbar: bayangan, tombol back-to-top
+      var nav = document.getElementById('nav'),
+        topBtn = document.getElementById('top');
+      addEventListener(
+        'scroll',
+        function () {
+          nav.classList.toggle('scrolled', scrollY > 20);
+          topBtn.classList.toggle('show', scrollY > 500);
+        },
+        { passive: true },
+      );
+      topBtn.onclick = function () {
+        scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      // Menu mobile
+      var burger = document.getElementById('burger'),
+        menu = document.getElementById('menu');
+      function closeMenu() {
+        menu.classList.remove('open');
+        burger.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+      burger.onclick = function () {
+        var o = menu.classList.toggle('open');
+        burger.classList.toggle('open', o);
+        burger.setAttribute('aria-expanded', o);
+      };
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', closeMenu);
+      });
+
+      // Indikator menu aktif
+      var links = [].slice.call(menu.querySelectorAll('a'));
+      var spy = new IntersectionObserver(
+        function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) {
+              links.forEach(function (l) {
+                l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id);
+              });
+            }
+          });
+        },
+        { rootMargin: '-45% 0px -50% 0px' },
+      );
+      document.querySelectorAll('main section').forEach(function (s) {
+        spy.observe(s);
+      });
+
+      // Animasi muncul saat scroll
+      var rv = new IntersectionObserver(
+        function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              rv.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document.querySelectorAll('.rv').forEach(function (el, i) {
+        el.style.transitionDelay = (i % 3) * 90 + 'ms';
+        rv.observe(el);
+      });
+
+      // Form: dikirim lewat WhatsApp atau aplikasi email (tanpa server)
+      document.querySelectorAll('[data-via]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var n = fn.value.trim(),
+            e = fe.value.trim(),
+            m = fm.value.trim(),
+            s = document.getElementById('status');
+          if (!n || !m || !/^\S+@\S+\.\S+$/.test(e)) {
+            s.textContent = 'Isi nama, email yang valid, dan pesan terlebih dahulu.';
+            return;
+          }
+          var body = 'Halo Rifki, saya ' + n + ' (' + e + ').\n\n' + m;
+          s.textContent = 'Membuka aplikasi pesan...';
+          if (btn.dataset.via === 'wa') open('https://wa.me/6283847995709?text=' + encodeURIComponent(body), '_blank');
+          else location.href = 'mailto:juandarifki01@gmail.com?subject=' + encodeURIComponent('Pesan dari ' + n) + '&body=' + encodeURIComponent(body);
+        });
+      });
+    </script>
+  </body>
+</html>
